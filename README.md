@@ -1,5 +1,37 @@
 # dcm2bids
-Your friendly DICOM converter.
+Your friendly DICOM converter to work with Stern's Data
+
+## How-To
+
+#### Making Configration files
+- Run ``` dcm2bids_scaffold ```
+- Run and change source_of_the_data as needed``` dcm2bids_helper -d source_of_the_data/ ```
+  - Example: ``` dcm2bids_helper -d HOMe38_2022-03-30_113246/BOLD_AP_IAT_Run1_003/ ```   
+- Run ``` mkdir code ```
+- Run ``` nano code/dcm2bids_config.json ```
+- Copy  and change FOLDER_NAME as needed 
+```` 
+{  
+  "descriptions": [ {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-rest",
+      "criteria": {
+        "SeriesDescription": "FOLDER_NAME*"
+      "sidecarChanges": {
+        "TaskName": "rest"
+      }
+      }
+    }
+  ]
+}
+
+````
+- Run and change source_of_the_data as needed ``` dcm2bids -d source_of_the_data/ -p PARTICIPANT_ID -s SESSION_ID -c code/dcm2bids_config.json```
+    - Example: ``` dcm2bids_helper -d HOMe38_2022-03-30_113246/BOLD_AP_IAT_Run1_003/ ```   
+#### Logs are saved here ``` tmp_dcm2bids/log/sub-<label>_<datetime>.log ``` for any problems
+
+---
 
 [![Documentation badge](https://img.shields.io/badge/Documentation-dcm2bids-succes.svg)](https://unfmontreal.github.io/Dcm2Bids)
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.2616548.svg)](https://zenodo.org/badge/latestdoi/59581295)
@@ -62,3 +94,5 @@ Before posting your question, you may want to first browse through questions tha
 [neurostars]: https://neurostars.org/
 [neurostars-dcm2bids]: https://neurostars.org/tag/dcm2bids
 [dcm2bids-contributing]:  https://unfmontreal.github.io/Dcm2Bids/CONTRIBUTING
+
+
