@@ -49,7 +49,9 @@ Your friendly DICOM converter to work with Stern's Data
 ---
 
 ### Result
-![Screen Shot 2022-06-16 at 3 16 36 PM](https://user-images.githubusercontent.com/23088470/174147965-3e9862d5-8a27-4133-9a91-a26f935431b7.png)
+
+![Screen Shot 2022-06-16 at 3 16 36 PM](https://user-images.githubusercontent.com/23088470/174148534-562e2cf3-8f9b-40a0-a752-fe927af68c1d.png)
+
 
 ---
 
