@@ -17,7 +17,7 @@ Your friendly DICOM converter to work with Stern's Data
       "modalityLabel": "bold",
       "customLabels": "task-rest",
       "criteria": {
-        "SeriesDescription": "FOLDER_NAME*"
+        "SeriesDescription": "FOLDER_NAME*",
       "sidecarChanges": {
         "TaskName": "rest"
       }
@@ -27,6 +27,20 @@ Your friendly DICOM converter to work with Stern's Data
 }
 
 ````
+   - Example: 
+   ``` {
+  "descriptions": [
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-rest",
+      "criteria": { "SeriesDescription": "BOLD_AP_IAT_Run1_003*", "sidecarChanges": {"TaskName": "rest"}}
+    }
+  ]
+}
+```
+
+ 
 - Run and change source_of_the_data as needed ``` dcm2bids -d source_of_the_data/ -p PARTICIPANT_ID -s SESSION_ID -c code/dcm2bids_config.json```
     - Example: ``` dcm2bids_helper -d HOMe38_2022-03-30_113246/BOLD_AP_IAT_Run1_003/ ```   
 #### Logs are saved here ``` tmp_dcm2bids/log/sub-<label>_<datetime>.log ``` for any problems
