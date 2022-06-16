@@ -45,6 +45,12 @@ Your friendly DICOM converter to work with Stern's Data
     - Example: ``` dcm2bids_helper -d HOMe38_2022-03-30_113246/BOLD_AP_IAT_Run1_003/ ```   
 #### Logs are saved here ``` tmp_dcm2bids/log/sub-<label>_<datetime>.log ``` for any problems
 
+
+---
+
+### Result
+![Screen Shot 2022-06-16 at 3 16 36 PM](https://user-images.githubusercontent.com/23088470/174147965-3e9862d5-8a27-4133-9a91-a26f935431b7.png)
+
 ---
 
 [![Documentation badge](https://img.shields.io/badge/Documentation-dcm2bids-succes.svg)](https://unfmontreal.github.io/Dcm2Bids)
