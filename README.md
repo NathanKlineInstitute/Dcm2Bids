@@ -7,6 +7,7 @@ Your friendly DICOM converter to work with Stern's Data
 - Run ``` dcm2bids_scaffold ```
 - Run and change source_of_the_data as needed``` dcm2bids_helper -d source_of_the_data/ ```
   - Example: ``` dcm2bids_helper -d HOMe38_2022-03-30_113246/BOLD_AP_IAT_Run1_003/ ```   
+  - Example: ```dcm2niix -b y -ba y -z y -f '%3s_%f_%d_%r' -o ./tmp_dcm2bids HOMe06_2021-10-26_140836/BOLD_AP_IAT_Run1_003/  ```   
 - Run ``` mkdir code ```
 - Run ``` nano code/dcm2bids_config.json ```
 - Copy  and change FOLDER_NAME as needed 

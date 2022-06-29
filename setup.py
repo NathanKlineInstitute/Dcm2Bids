@@ -36,8 +36,8 @@ ENTRY_POINTS = {
     ],
     # "configurations": [],
 }
-AUTHOR = "Christophe Bedetti"
-AUTHOR_EMAIL = "christophe.bedetti@umontreal.ca"
+AUTHOR = "NKI"
+AUTHOR_EMAIL = "NKI"
 DESCRIPTION = (
     "Reorganising NIfTI files from dcm2niix into the Brain Imaging Data Structure"
 )
@@ -46,10 +46,11 @@ with open("README.md", encoding="utf-8") as _:
 LICENSE = "GPLv3+"
 PROJECT_URLS = {
     "Documentation": "https://unfmontreal.github.io/Dcm2Bids",
-    "Source Code": "https://github.com/unfmontreal/Dcm2Bids",
+    "Source Code": "https://github.com/NathanKlineInstitute/Dcm2Bids",
 }
+
 CLASSIFIERS = [
-    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: NIMH Data Archive",
     "Intended Audience :: Science/Research",
     "Operating System :: MacOS",
     "Operating System :: Microsoft :: Windows",
